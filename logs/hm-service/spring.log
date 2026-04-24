@@ -1415,3 +1415,23 @@ Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.reflect.In
 17:49:24:539 DEBUG 6228 --- [http-nio-8080-exec-4] com.hmall.mapper.ItemMapper.selectList   : <==      Total: 20
 17:49:31:264  INFO 6228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 17:49:31:281  INFO 6228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+19:12:37:166  INFO 21724 --- [main] com.hmall.HMallApplication               : Starting HMallApplication using Java 17.0.12 on elara with PID 21724 (D:\java\heimaTest\hmall\hm-service\target\classes started by 28950 in D:\java\heimaTest\hmall)
+19:12:37:170 DEBUG 21724 --- [main] com.hmall.HMallApplication               : Running with Spring Boot v2.7.12, Spring v5.3.27
+19:12:37:170  INFO 21724 --- [main] com.hmall.HMallApplication               : The following 1 profile is active: "local"
+19:12:38:370  INFO 21724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+19:12:38:373  INFO 21724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+19:12:38:419  INFO 21724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+19:12:39:444  INFO 21724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+19:12:39:456  INFO 21724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+19:12:39:456  INFO 21724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+19:12:39:629  INFO 21724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+19:12:39:629  INFO 21724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2384 ms
+19:12:41:749  INFO 21724 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+19:12:42:452  INFO 21724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+19:12:42:453  INFO 21724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+19:12:42:457  INFO 21724 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+19:12:42:510  INFO 21724 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+19:12:42:813  INFO 21724 --- [main] com.hmall.HMallApplication               : Started HMallApplication in 6.283 seconds (JVM running for 7.285)
+19:12:59:433  INFO 21724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:12:59:433  INFO 21724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+19:12:59:435  INFO 21724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
