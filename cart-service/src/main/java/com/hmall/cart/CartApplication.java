@@ -1,5 +1,6 @@
 package com.hmall.cart;
 
+import com.hmall.hmapi.config.DefaultFeignConfig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,8 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableFeignClients(basePackages = "com.hmall.hmapi.client"
-/*输出openfeign日志，需要调试时打开：, defaultConfiguration = DefaultFeignConfig.class*/)
+@EnableFeignClients(basePackages = "com.hmall.hmapi.client", defaultConfiguration = DefaultFeignConfig .class)
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
 public class CartApplication {
