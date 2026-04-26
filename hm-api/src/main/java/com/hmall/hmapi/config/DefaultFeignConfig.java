@@ -1,6 +1,7 @@
 package com.hmall.hmapi.config;
 
 import com.hmall.common.utils.UserContext;
+import com.hmall.hmapi.client.fallback.ItemClientFallbackFactory;
 import feign.Logger;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
@@ -23,5 +24,10 @@ public class DefaultFeignConfig {
                 }
             }
         };
+    }
+
+    @Bean
+    public ItemClientFallbackFactory itemClientFallbackFactory(){
+        return new ItemClientFallbackFactory();
     }
 }
